@@ -1,73 +1,42 @@
-## Compilação
+# Diretórios de build
 bin/
 obj/
+out/
+GeneratedFiles/
+
+# Diretórios do Visual Studio
+.vs/
 *.user
 *.suo
-*.cache
-*.log
-
-## Publicação
-publish/
-out/
-*.db-shm
-*.db-wal
-
-## Banco de dados local
-*.db
-*.sqlite
-*.mdf
-*.ldf
-
-## IDEs e editores
-.vscode/
-.idea/
+*.userosscache
 *.sln.docstates
-.vs/
 
-## Configuração do Rider
-.idea/
+# VS Code
+.vscode/
+*.code-workspace
 
-## Arquivos temporários
-*.tmp
+# Diretórios de publicação e arquivos públicos
+publish/
+wwwroot/dist/
+wwwroot/lib/
+Public/
+App_Data/
+obj/
+
+# Logs e temporários
+*.log
+*.tlog
+*.cache
 *.bak
-*.swp
-*~
+*.tmp
 
-## Sistema operacional
+# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-## Logs
-logs/
-*.log
-
-## Testes e relatórios
-TestResults/
-coverage/
-*.coverage
-*.trx
-
-## Arquivos gerados por pacotes
-node_modules/
-packages/
-bower_components/
-
-## Dotnet CLI
-project.lock.json
-project.fragment.lock.json
-
-## Configurações específicas locais
-appsettings.*.local.json
-secrets.json
-
-## Docker
-*.pid
-.env
-docker-compose.override.yml
-
-## Arquivos de backup do VS Code e editores
-*.code-workspace
-*.code-workspace*
-
-## Arquivos do Rider
-.idea/
+# Build do .NET
+*.db
+*.db-shm
+*.db-wal
