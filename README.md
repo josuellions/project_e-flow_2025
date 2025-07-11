@@ -86,31 +86,35 @@ Este projeto tem como objetivo realizar a manutenção em um sistema legado de e
 
 ```txt
 📦 root
- ┣ 📂 TesteTecnico (Projeto)
- ┃ ┣ 📜 Dependencias
- ┃ ┣ 📂 Properties
- ┃ ┣ 📂 App_Data (Dados e arquivos)
- ┃ ┣ 📂 Public (Dados e arquivos XML)
- ┃ ┣ 📂 src (Aplicação)
- ┃ ┃ ┣ 📂 Application (Centralizar e executar operações e gerenciamento de NF-e na aplicação)
- ┃ ┃ ┣ 📂 Communication (Classes de request e response)
- ┃ ┃ ┣ 📂 Contracts (Interface para persistência e consulta de NF-e)
- ┃ ┃ ┣ 📂 Controllers (Orquestrar as requisições e delegar as operações entre a camada e os serviços da lógica de negócio)
- ┃ ┃ ┣ 📂 Entities (Classes de persistência e leitura dos dados no **banco dados**)
- ┃ ┃ ┣ 📂 Repositories (Responsável por persistir e ler os dados no repositório da aplicação)
- ┃ ┃ ┣ 📂 UseCases (Implementa as regras de negocio para tratar os dados de percistência e retorno dos dados)
- ┃ ┃ ┣ 📂 Views (Camada de apresentação responsável por renderizar a interface com base nos dados do modelo)
- ┃ ┃ ┃  ┗ 📜 GerarViewNotas.cs (Monta a visualização estruturada de notas fiscais processadas, exibição dos dados restorno)
- ┃ ┃ ┗ 📂 Utils (Gera dados e estruturadas conforme o padrão da regra de negocio, de forma aleatória para fins de teste ou simulação)
- ┃ ┃    ┣ 📜 GerarChaveNFeRandom.cs (Gera chaves eletrônicas de NF-e válidas padrão da SEFAZ, de forma aleatória para teste ou simulação)
- ┃ ┃    ┣ 📜 GerarCNPJRandom.cs (Gera CNPJs válidos de forma aleatória, respeitando a estrutura oficial para teste e validação)
- ┃ ┃    ┗ 📜 GerarDateRandom.cs (Cria datas aleatórias dentro de um intervalo definido, útil para simulações e testes com dados temporais)
- ┃ ┗ 📂 tests
- ┃    ┗ 📂 UseCases.Test (Projeto TESTES)
- ┣ 📜 .dockerignore
- ┣ 📜 docker-compose.yaml
- ┣ 📜 Dockerfile.js
- ┗ 📜 TesteTecnico.sln
+ ┗ 📂 TesteTecnico (Projeto)
+   ┣ 📜 Dependencias
+   ┣ 📂 Properties
+   ┣ 📂 App_Data (Dados e arquivos)
+   ┣ 📂 Public (Dados e arquivos XML)
+   ┣ 📂 src (Aplicação)
+   ┃ ┣ 📂 Application (Centralizar e executar operações e gerenciamento de NF-e na aplicação)
+   ┃ ┣ 📂 Communication (Classes de request e response)
+   ┃ ┣ 📂 Contracts (Interface para persistência e consulta de NF-e)
+   ┃ ┣ 📂 Controllers (Orquestrar as requisições e delegar as operações entre a camada e os serviços da lógica de negócio)
+   ┃ ┣ 📂 Entities (Classes de persistência e leitura dos dados no **banco dados**)
+   ┃ ┣ 📂 Repositories (Responsável por persistir e ler os dados no repositório da aplicação)
+   ┃ ┣ 📂 UseCases (Implementa as regras de negocio para tratar os dados de percistência e retorno dos dados)
+   ┃ ┣ 📂 Views (Camada de apresentação responsável por renderizar a interface com base nos dados do modelo)
+   ┃ ┃  ┗ 📜 GerarViewNotas.cs (Monta a visualização estruturada de notas fiscais processadas, exibição dos dados restorno)
+   ┃ ┗ 📂 Utils (Gera dados e estruturadas conforme o padrão da regra de negocio, de forma aleatória para fins de teste ou simulação)
+   ┃    ┣ 📜 GerarChaveNFeRandom.cs (Gera chaves eletrônicas de NF-e válidas padrão da SEFAZ, de forma aleatória para teste ou simulação)
+   ┃    ┣ 📜 GerarCNPJRandom.cs (Gera CNPJs válidos de forma aleatória, respeitando a estrutura oficial para teste e validação)
+   ┃    ┗ 📜 GerarDateRandom.cs (Cria datas aleatórias dentro de um intervalo definido, útil para simulações e testes com dados temporais)
+   ┣ 📂 tests
+   ┃   ┗ 📂 UseCases.Test (Projeto TESTES)
+   ┣ 📜 docker-compose.yaml
+   ┣ 📜 Dockerfile.js
+   ┣ 📜 .dockerignore
+   ┣ 📜 .gitignore
+   ┣ 📜 Program.cs
+   ┣ 📜 README.md
+   ┣ 📜 TesteTecnico.csproj
+   ┗ 📜 TesteTecnico.sln
 
 ```
 
