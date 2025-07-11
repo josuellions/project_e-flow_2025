@@ -132,7 +132,7 @@ Este projeto tem como objetivo realizar a manutenção em um sistema legado de e
 
     - Configurações
         - `docker-compose.yml`
-        - `Program.cs` (Ajustar caminho do banco dados na linha 48)
+        - `Program.cs` 
 
 <br/>
 
