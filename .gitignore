@@ -2,5 +2,48 @@
 # Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
 ################################################################################
 
+# Diretórios de build
+bin/
+obj/
+out/
+GeneratedFiles/
+
+# Diretórios do Visual Studio
+.vs/
 /.vs
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Diretórios de publicação e arquivos públicos
+publish/
+wwwroot/dist/
+wwwroot/lib/
+Public/
+App_Data/
 /obj/Release/net8.0
+obj/
+
+# Logs e temporários
+*.log
+*.tlog
+*.cache
+*.bak
+*.tmp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build do .NET
+*.db
+*.db-shm
+*.db-wal
+
