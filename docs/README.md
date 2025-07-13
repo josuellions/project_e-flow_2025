@@ -69,7 +69,8 @@ docker build -t e-flow .
 Executa a aplicação com parâmetros passados no CLI:
 
 ```bash
-docker compose run dev dotnet run --project ./TesteTecnico/TesteTecnico.csproj -- gerar --modelo 55 --tipo saida
+docker compose run dev dotnet run --project ./TesteTecnico/TesteTecnico.csproj -- gerar -- modelo 55 -- tipo saida
+docker compose run dev dotnet run --project ./TesteTecnico/TesteTecnico.csproj -- listar -- modelo 55 -- tipo saida
 ```
 
 ##  Rodar os testes via Docker (verbose)
@@ -91,6 +92,7 @@ No shell do container, você pode executar:
 
 ```bash
 dotnet run --project ./TesteTecnico/TesteTecnico.csproj -- gerar -- modelo 55 -- tipo saida
+dotnet run --project ./TesteTecnico/TesteTecnico.csproj -- listar -- modelo 55 -- tipo saida
 dotnet test ./TesteTecnico/tests/UseCases.Test/UseCases.Test.csproj --verbosity detailed
 ```
 
