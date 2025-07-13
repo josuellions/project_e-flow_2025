@@ -150,7 +150,7 @@ Este projeto tem como objetivo realizar a manutenção em um sistema legado de e
 docker compose up --build -d
 docker ps
 ```
-    - Documentação para criar e executar no DOCKER
+  - Documentação para criar e executar no DOCKER
         - [README](https://github.com/josuellions/project_e-flow_2025/tree/main/docs)
 
 - Dados
