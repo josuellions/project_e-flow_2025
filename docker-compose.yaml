@@ -1,12 +1,11 @@
+version: "3.9"
+
 services:
-    web:
-        container_name: e-flow
-        build:
-            context: .
-            dockerfile: Dockerfile
-        ports:
-            - "8080:80"
-        # volumes:
-        #     - ./src/TesteTecnico.API/DataBase:/app/DataBase
-        environment:
-            - ASPNETCORE_ENVIRONMENT=Development
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: e-flow
+    working_dir: /app
+    stdin_open: true
+    tty: true

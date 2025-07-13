@@ -1,18 +1,13 @@
-# Etapa 1: build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 
-COPY TesteTecnico.sln ./
-COPY TesteTecnico/ ./TesteTecnico/
-COPY tests/UseCases.Test/ ./tests/UseCases.Test/
-
-RUN dotnet restore ./TesteTecnico/TesteTecnico.csproj
-RUN dotnet publish ./TesteTecnico/TesteTecnico.csproj -c Release -o /app/publish
-
-# Etapa 2: runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+# Define diretório base no container
 WORKDIR /app
-COPY --from=build /app/publish .
 
-EXPOSE 80
-ENTRYPOINT ["dotnet", "TesteTecnico.dll"]
+# Copia todos os arquivos do projeto para dentro do container
+COPY . .
+
+# Restaura dependências da solução
+RUN dotnet restore TesteTecnico.sln
+
+# Compila toda a solução (sem executar nada)
+RUN dotnet build TesteTecnico.sln --no-restore
